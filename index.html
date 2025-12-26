@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỚI THIỆU BẢN THÂN</title>
+    <style>
+        /* 1. NỀN VÀ HIỆU ỨNG HOA ANH ĐÀO */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff5f7 url('https://www.transparenttextures.com/patterns/sakura.png');
+            color: #000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .sakura {
+            position: fixed; top: -10%; z-index: 9999;
+            background-color: #ffb7c5;
+            border-radius: 100% 0 100% 0;
+            opacity: 0.7; pointer-events: none;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% { transform: translateY(0vh) rotate(0deg); }
+            100% { transform: translateY(110vh) rotate(360deg); }
+        }
+
+        /* 2. HAI NHÂN VẬT ANIME HAI BÊN GÓC WEB */
+        .anime-fixed-left {
+            position: fixed; bottom: 0; left: 5px;
+            width: 180px; z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .anime-fixed-right {
+            position: fixed; bottom: 0; right: 5px;
+            width: 180px; z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .anime-fixed-left:hover, .anime-fixed-right:hover {
+            transform: translateY(-15px) scale(1.1);
+        }
+
+        /* 3. HEADER VÀ HIỆU ỨNG ZOOM */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .header-gif {
+            width: 90%; max-width: 650px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 183, 197, 0.6);
+            animation: zoomPulse 4s infinite alternate ease-in-out;
+        }
+        @keyframes zoomPulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.07); }
+        }
+
+        /* 4. ĐỊNH DẠNG VĂN BẢN */
+        .title-intro { font-size: 16px; color: #000; margin-top: 25px; font-weight: normal; }
+        
+        nav {
+            background: rgba(255, 228, 232, 0.9);
+            padding: 15px; position: sticky; top: 0;
+            text-align: center; border-bottom: 2px solid #ffb7c5; z-index: 1001;
+        }
+        nav a { text-decoration: none; color: #000; font-size: 16px; margin: 0 15px; }
+
+        .container {
+            max-width: 900px; margin: 20px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px; border-radius: 40px;
+            border: 2px dashed #ffcad4; position: relative; z-index: 10;
+        }
+
+        /* Các cỡ chữ yêu cầu */
+        .fz-26-bold { font-size: 26px; font-weight: bold; color: #000; margin-top: 40px; }
+        .fz-20-red-bold { font-size: 20px; font-weight: bold; color: #e63946; margin-top: 25px; }
+        .fz-16-normal { font-size: 16px; color: #000; font-weight: normal; line-height: 1.8; }
+        .italic { font-style: italic; }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ffb7c5, transparent);
+            margin: 30px 0;
+        }
+
+        /* Ảnh và Layout */
+        .img-full { width: 100%; border-radius: 12px; margin: 15px 0; border: 1px solid #ffcad4; }
+        .friend-box {
+            display: flex; gap: 20px; align-items: center; margin-top: 15px;
+        }
+        .friend-img { width: 250px; border-radius: 15px; border: 3px solid #ffb7c5; }
+        
+        footer { text-align: center; padding: 50px; color: #ff8fa3; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <img src="https://tse2.mm.bing.net/th/id/OIP.Jb9DoIYAV7wq4OfkGH4J-gHaHa?pid=Api&P=0&h=220" class="anime-fixed-left" alt="Anime Left">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.awYvKisXDxgiwYU9iOZ7rwHaG0?pid=Api&P=0&h=220" class="anime-fixed-right" alt="Anime Right">
+
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3D2-SihHGM7BxlfQL7ie4ZavySezBIIvc_Q&s" class="header-gif">
+        <div class="title-intro">Xin chào, tôi là Nguyễn Trọng Khánh, học lớp 12A4! Sau đây tôi xin trân trọng giới thiệu bản thân!</div>
+    </header>
+
+    <nav>
+        <a href="#section1">1. Thông tin cơ bản</a>
+        <a href="#section2">2. Sở thích</a>
+        <a href="#section3">3. Hành trình tri thức</a>
+        <a href="#section4">4. Mục tiêu và ước mơ</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="section1">
+            <div class="fz-26-bold">1. Thông tin cơ bản</div>
+            <p class="fz-16-normal">👦 <strong>Họ và tên:</strong> Nguyễn Trọng Khánh</p>
+            <p class="fz-16-normal">📅 <strong>Ngày sinh:</strong> 4/11/2008</p>
+            <p class="fz-16-normal">👨‍🎓 <strong>Nghề nghiệp:</strong> Học sinh</p>
+            <p class="fz-16-normal">🏫 <strong>Trường:</strong> THPT Hòn Gai</p>
+            <p class="fz-16-normal">📍 <strong>Nơi trú:</strong> Tổ 9, Thành phố Hạ Long, Quảng Ninh, Việt Nam</p>
+            <p class="fz-16-normal">🌐 <strong>Gmail:</strong> khiukhiu916@gmail.com</p>
+            <p class="fz-16-normal">🔢 <strong>Số điện thoại:</strong> 0866480458</p>
+            <p class="fz-16-normal">👥 <strong>Facebook:</strong> <a href="https://www.facebook.com/share/1CuqjuvDbR/" target="_blank">https://www.facebook.com/share/1CuqjuvDbR/</a></p>
+            <p class="fz-16-normal">💪 <strong>Cách tui hồi phục năng lượng:</strong> nét sau giờ học, nét sau giờ học, nét sau giờ học (điều quan trọng nói 3 lần)</p>
+            <p class="fz-16-normal italic">✍️ <strong>Câu nói tâm đắc:</strong> "Nước đến mắt nhảy vẫn kịp."</p>
+            
+            <div class="divider"></div>
+            <div class="fz-16-normal"><strong>Bạn thân:</strong> Nguyễn Tiến Thành</div>
+            <div class="friend-box">
+                <img src="https://i.postimg.cc/kXxNKZFW/z7365441130579-13421efc5cbc17ec1c14065684076026.jpg" class="friend-img">
+                <div class="fz-16-normal italic">Người anh em siu cấp vip pro, có phúc cùng hưởng, có họa cùng chia của tui.</div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="fz-26-bold">2. Sở thích</div>
+            
+            <div class="fz-20-red-bold">- Game</div>
+            <p class="fz-16-normal">Ngoài giờ học, thế giới của tui xoay quanh màn hình máy tính và những trang truyện tranh. Tui tự nhận mình là một người dành niềm đam mê lớn cho Game và Anime – nơi mang lại những trải nghiệm mà thực tại đôi khi không có được.</p>
+            <ul class="fz-16-normal">
+                <li><strong>Về Game:</strong> Với tui, đây không chỉ là giải trí mà còn là một "cuộc đời khác". Những trận rank căng thẳng hay nhiệm vụ ẩn luôn có sức hút đặc biệt. Cảm giác nhập vai thành những anh hùng, trực tiếp tham gia vào các trận combat nảy lửa là thứ gia vị giúp tui giải tỏa áp lực mỗi ngày.</li>
+                <li><strong>Về Anime:</strong> Khi rời tay máy, tui thường tìm thấy sự đồng điệu qua hành trình của các nhân vật anime. Những bài học về sự hy sinh và ý chí kiên cường được truyền tải qua những khung hình nghệ thuật luôn tạo cho tui nhiều cảm hứng.</li>
+                <li><strong>Chút nổi loạn:</strong> Thú thật, đôi khi sự lôi cuốn của một bộ phim hay hay một trận đấu dở dang khiến tui xao nhãng việc lên lớp. Những buổi trốn học đi net tuy không phải là điều đáng khích lệ, nhưng đó là một phần kỷ niệm về sự nổi loạn, nơi tui được sống thật với sở thích của mình.</li>
+            </ul>
+            <p class="fz-16-normal">Dù đôi khi bị gắn mác "nghiện game", nhưng chính những khoảnh khắc này đã nuôi dưỡng cho tui một trí tưởng tượng phong phú và tinh thần quyết tâm "phá đảo" mọi thử thách, dù là trong thế giới ảo hay đời thực.</p>
+            
+            <img src="https://cdn.alza.cz/Foto/ImgGalery/Image/honkai-star-rail-keyart.jpg" class="img-full">
+            <img src="https://i.ytimg.com/vi/ILH7vfRN3TI/maxresdefault.jpg" class="img-full">
+
+            <iframe src="https://www.tiktok.com/embed/v2/7298571648817499394" style="width: 100%; height: 750px; border: none; border-radius: 12px; margin-top: 20px;" allow="fullscreen"></iframe>
+
+            <div class="fz-20-red-bold">- Anime:</div>
+            <p class="fz-16-normal">Nếu không cầm tay máy chơi game, tui thường dành thời gian đắm mình vào thế giới Anime, đặc biệt là thể loại Romcom (tình cảm hài hước). Khác với sự kịch tính của các trận game, Romcom mang đến cho tui một góc nhìn nhẹ nhàng và đầy màu sắc về cuộc sống thường nhật.</p>
+            <img src="https://cdn.dealtoday.vn/cf4fd865077a4a33b783a09e1397a669.jpg" class="img-full">
+            <p class="fz-16-normal">Sức hấp dẫn của thể loại này không nằm ở những tình tiết quá lắt léo, mà ở những tình huống dở khóc dở cười và những rung động tinh tế của tuổi trẻ. Tui thích cách các bộ Anime Romcom xây dựng tâm lý nhân vật: từ những hiểu lầm ngớ ngẩn đến cách họ cùng nhau trưởng thành qua từng tập phim. Đó là sự kết hợp hoàn hảo giữa những tràng cười sảng khoái và những nốt lặng ngọt ngào, giúp tui cân bằng lại cảm xúc sau những giờ học hay những trận đấu rank căng thẳng.</p>
+            <p class="fz-16-normal">Link tham khảo: <a href="https://nhatngutamviet.edu.vn/kien-thuc/top-50-bo-anime-tinh-yeu-tinh-cam-hay-lang-man-mot-phim-khong-nen-bo-lo/" target="_blank">Top Anime Romcom hay nhất</a></p>
+            <p class="fz-16-normal">Đối với tui, xem Romcom không chỉ là giải trí, mà còn là cách để trải nghiệm những câu chuyện đầy tính nhân văn, giúp tâm hồn trở nên thư thái và giữ được cái nhìn lạc quan hơn vào thực tại.</p>
+
+            <div class="divider"></div>
+
+            <div class="fz-20-red-bold">- Ăn uống</div>
+            <p class="fz-16-normal">Với tui, ăn uống là cách giải tỏa áp lực trực diện nhất. Món khoái khẩu của tui là Tokbokki. Cảm giác dai giòn của bánh gạo quyện trong nước sốt cay nồng luôn giúp tôi nhanh chóng nạp lại năng lượng và cân bằng cảm xúc sau những giờ học hay đấu rank căng thẳng.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB_qBPC05GmcLHwR7Ayk1SF568HCse2oKZrg&s" class="img-full" style="max-width: 500px; display: block; margin: 10px auto;">
+        </section>
+
+        <section id="section3">
+            <div class="fz-26-bold">3. Định hướng phát triển</div>
+            <div class="divider"></div>
+            <p class="fz-16-normal">Trong kỳ tuyển sinh sắp tới, tui đã xác định cho mình một kế hoạch học tập rõ ràng và nghiêm túc. Với tui, việc học không chỉ là bài vở trên lớp mà là một lộ trình dài hơi, đòi hỏi sự phân bổ thời gian hợp lý giữa việc ôn tập kiến thức nền tảng và rèn luyện tư duy chuyên sâu. Để đạt được kết quả như mong muốn, tui vẫn đang không ngừng cố gắng mỗi ngày, kiên trì theo đuổi những cột mốc đã đề ra để sẵn sàng chinh phục mục tiêu lớn nhất phía trước.</p>
+            <div class="divider"></div>
+        </section>
+
+        <section id="section4">
+            <div class="fz-26-bold">4. Mục tiêu và ước mơ</div>
+            <div class="fz-20-red-bold">🎯 MỤC TIÊU 2025 - 2026</div>
+            <p class="fz-16-normal">✨ <strong>Về học tập:</strong> Chinh phục tấm vé vào Đại học Y top đầu Việt Nam. (Quyết tâm nỗ lực hết mình để hiện thực hóa ước mơ trở thành Bác sĩ tương lai.)</p>
+            <p class="fz-16-normal">🌸 <strong>Về sở thích:</strong> "Đu" thành công thật nhiều Bias Anime. (Lấy niềm đam mê làm động lực để nạp năng lượng sau những giờ ôn thi căng thẳng.)</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Nguyễn Trọng Khánh - 12A4 © 2024</p>
+    </footer>
+
+    <script>
+        function createSakura() {
+            const sakura = document.createElement('div');
+            sakura.classList.add('sakura');
+            sakura.style.left = Math.random() * 100 + 'vw';
+            sakura.style.width = Math.random() * 10 + 10 + 'px';
+            sakura.style.height = sakura.style.width;
+            sakura.style.animationDuration = Math.random() * 3 + 4 + 's';
+            document.body.appendChild(sakura);
+            setTimeout(() => { sakura.remove(); }, 7000);
+        }
+        setInterval(createSakura, 300);
+    </script>
+</body>
+</html>
+
